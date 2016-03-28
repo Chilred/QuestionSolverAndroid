@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".LinearLayout" >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_button"
+            android:id="@+id/Camera_start_button"
+            android:enabled="false"
+            android:elevation="10dp"
+            android:onClick="onClick"
+            android:background="@color/background_floating_material_light"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Observe"
+            android:id="@+id/btnObserve"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="onClick"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:padding="10dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Löse alle Fragen"
+            android:id="@+id/btnSolution"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:gravity="center_horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bing"
+                android:id="@+id/cbBing"
+                android:layout_gravity="left|bottom"
+                android:checked="true"
+                android:onClick="onClick" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google"
+                android:id="@+id/cbGoogle"
+                android:layout_gravity="center_horizontal|bottom"
+                android:checked="false"
+                android:onClick="onClick" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wiki"
+                android:id="@+id/cbWiki"
+                android:layout_gravity="right|bottom"
+                android:checked="false"
+                android:onClick="onClick" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

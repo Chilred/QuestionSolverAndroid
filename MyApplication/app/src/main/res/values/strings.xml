@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuestionSolver</string>
+    <string name="action_settings">Settings</string>
+    <string name="image_dialog_description">Image Preview</string>
+    <string name="camera_button">Camera</string>
+    <string name="backgroundInfo">QuestionSolver ist aktiviert. Minimiere nun QuestionSolver und spiele das Quiz. Wenn du ein Screenshot erstellt, erkennt Question Solver dies und
+    versucht die Aufgabe zu lösen. Du bekommst eine Nachricht, wenn die Lösung gefunden wurde. Bitte beachte, dass je nach Suchmaschine es 15 Sekunden dauern kan</string>
+    <string name="title_activity_ocr_new">OCR_new</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

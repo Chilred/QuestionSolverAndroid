@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="136" failures="5" name="info.bliki.wiki.filter.TemplateParserTest" time="0.142" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin"/>
+    <property name="java.vm.version" value="25.25-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Chilred-pc\workspace\EPSTEST_Wiki\src\lib\info.bliki.wiki"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="DE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Chilred-pc\workspace\EPSTEST_Wiki\src\lib\info.bliki.wiki"/>
+    <property name="java.runtime.version" value="1.8.0_25-b18"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\CHILRE~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.3.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;%JAVA_HOME%\bin; %M2_HOME%\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Chilred-pc\AppData\Roaming\npm;C:\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk1.8.0_25\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\Chilred-pc"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Chilred-pc"/>
+    <property name="java.class.path" value="C:\apache-maven-3.3.3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_25\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="de"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_25"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_25\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\apache-maven-3.3.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateCall4" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testInvalidNoinclude" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testInvalidOnlyinclude" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateCall2" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateParameter01" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateNavbar" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testInvalidIncludeonly" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateParameter02" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateCall3" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateParameter03" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateNavbox" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateSeeAlso" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testNonExistentTemplate" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateCall1" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateCall5" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateImage1" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="test001" time="0.007"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="test002" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="test003" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="test004" time="0.003"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="test010" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIf06" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testSwitch010" time="0.002"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIfeq03" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="test006" time="0.004"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIf01" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testSwitch003" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="test00" time="0.002"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testInclude" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIf05" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testSwitch008" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testSwitch005" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testSwitch009" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateMain" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testNestedIf01" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr002" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr004" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr003" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr005" time="0.002"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIssue82_003" time="0.005">
+    <failure message="null expected:&lt;10[5]th&gt; but was:&lt;10[4]th&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: null expected:&lt;10[5]th&gt; but was:&lt;10[4]th&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at info.bliki.wiki.filter.TemplateParserTest.testIssue82_003(TemplateParserTest.java:1029)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIfexpr01" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr007" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testInclude2" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="test005" time="0.015"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr008" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testSwitch004" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIfexpr02" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testNestedIf04" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr006" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr009" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr010" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testInclude3" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIssue82_002" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="test000" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testBORN_DATA" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIssue82_001" time="0">
+    <failure message="null expected:&lt;10[5]&gt; but was:&lt;10[4]&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: null expected:&lt;10[5]&gt; but was:&lt;10[4]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at info.bliki.wiki.filter.TemplateParserTest.testIssue82_001(TemplateParserTest.java:1021)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIf03" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testInclude4" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIfeq01" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIfeq02" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIfexpr03" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testNestedIf03" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIf04" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIf00" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testSwitch002" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testSwitch006" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testSwitch007" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIf02" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testURLEncode001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr020" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testFormatnum002" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts07" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr017" time="0.002">
+    <failure message="null expected:&lt;2.718281828459045[5]&gt; but was:&lt;2.718281828459045[]&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: null expected:&lt;2.718281828459045[5]&gt; but was:&lt;2.718281828459045[]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at info.bliki.wiki.filter.TemplateParserTest.testExpr017(TemplateParserTest.java:725)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIssue82_004" time="0.006">
+    <failure message="null expected:&lt;10[5]&gt; but was:&lt;10[4]&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: null expected:&lt;10[5]&gt; but was:&lt;10[4]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at info.bliki.wiki.filter.TemplateParserTest.testIssue82_004(TemplateParserTest.java:1033)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testNS001" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testPlural001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIssue81_002" time="0.002">
+    <failure message="null expected:&lt;10[4]&gt; but was:&lt;10[3]&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: null expected:&lt;10[4]&gt; but was:&lt;10[3]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at info.bliki.wiki.filter.TemplateParserTest.testIssue81_002(TemplateParserTest.java:1017)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr016" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testFormatnum001" time="0.019"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTime001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testNAMESPACE001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr018" time="0.005"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr012" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr013" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr011" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr015" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts09" time="0.002"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testPadleft001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testPadright001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTag001" time="0.005"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts08" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr019" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts06" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIssue81_001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testExpr014" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplate06" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplate07" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testPipe002" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testPipe003" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testMONTHNAME" time="0.002"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testSwitch001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testPipe001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testNestedIf02" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testPipe001a" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testMONTHNUMBER" time="0.003"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIssue77_001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testIssue77_002" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts004" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts006" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateSwitch" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts002" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts008" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts001" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts003" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts005" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts000" time="0.002"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTitleparts007" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testAnarchismSidebar" time="0.004"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testMagicPAGENAME01" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testNestedTemplate" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testMagicPAGENAME02" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testNoincludeDemo001" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testOnlyicludeDemo001" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testOnlyicludeDemo002" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateParameter04" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testMagicTALKPAGENAME01" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testNoincludeDemo002" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testMagicTALKPAGENAME02" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testSortnameDemo001" time="0.003"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testTemplateParameter05" time="0"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testEndlessRecursion" time="0.014"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testOnlyicludeDemo003" time="0.002"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testMagicTALKPAGENAME03" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testMagicCURRENTYEAR" time="0.001"/>
+  <testcase classname="info.bliki.wiki.filter.TemplateParserTest" name="testOnlyicludeDemo004" time="0.001"/>
+</testsuite>
